@@ -1,4 +1,6 @@
-﻿namespace OperatorExercise
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace OperatorExercise
 {
     public class Program
     {
@@ -16,7 +18,11 @@
                 Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
             }
 
+            //Exercise 2: see AreaOfCircles Method
 
+            Console.WriteLine("What is the radius of your circle?");
+            var radius = double.Parse(Console.ReadLine());
+            Method1.AreaOfCircle(radius);
         }
     }
 }
